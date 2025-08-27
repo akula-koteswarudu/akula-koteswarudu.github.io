@@ -25,19 +25,9 @@ description: Software Engineer
   </div>
 </div>
 
-## 💼 Experience
+## 💼 Other Experience
 
 <div style="display: grid; gap: 1.5rem; margin: 2rem 0;">
-  
-  <div style="border: 2px solid #3498db; border-radius: 8px; padding: 1.5rem; background: #f8f9fa;">
-    <h3 style="color: #2c3e50; margin-top: 0;">
-      <a href="Experience/lemnisk_experience.html" style="color: #3498db; text-decoration: none;">
-        📊 MarTech Company - Software Engineer
-      </a>
-    </h3>
-    <p style="color: #7f8c8d; margin: 0.5rem 0;"><strong>Jan 2023 - Present</strong> | Full-time + Internship</p>
-    <p>Built scalable backend systems, optimized performance bottlenecks, and developed mobile SDKs. Key achievements include 30x performance improvements and handling 150K+ events/minute.</p>
-  </div>
 
   <div style="border: 2px solid #9b59b6; border-radius: 8px; padding: 1.5rem; background: #f8f9fa;">
     <h3 style="color: #2c3e50; margin-top: 0;">
