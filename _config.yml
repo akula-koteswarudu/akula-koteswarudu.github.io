@@ -1,3 +1,29 @@
-theme: minima
-title: Koteswarudu Akula - Software Engineer
-description: Portfolio showcasing my software development experience
+title: Koteswarudu Akula
+description: Software Engineer specializing in high-performance backend systems and mobile SDKs
+baseurl: ""
+url: "https://akula-koteswarudu.github.io"
+
+# Theme
+theme: cayman
+
+# Social links
+github_username: akula-koteswarudu
+linkedin_username: your-linkedin-username
+
+# SEO
+author: Koteswarudu Akula
+twitter:
+  username: your-twitter # optional
+  card: summary
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

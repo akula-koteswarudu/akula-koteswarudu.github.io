@@ -1,39 +1,106 @@
 ---
 layout: default
-title: Koteswarudu Akula - Software Engineer
+title: Home
 ---
 
-# Koteswarudu Akula
-## Software Engineer
-
-Welcome to my portfolio! I'm a software engineer with experience in full-stack development, specializing in backend systems, mobile SDKs, and high-performance applications.
-
-### Experience
-- [My Journey at Lemnisk: From Curious Intern to Full-Stack Engineer](Experience/lemnisk_experience.md)
-- [My Summer at Gojek: Learning Front-End Development](Experience/gojek_experience.md)
-
-### About Me
-I'm a Computer Science Engineering graduate from BITS Pilani, Hyderabad, with hands-on experience in building scalable systems that handle millions of notifications and events. My journey spans from front-end development with React and TypeScript to backend systems with Java Spring Boot and Node.js.
-
-### Technical Skills
-- **Backend:** Java, Spring Boot, Node.js, Python
-- **Frontend:** React.js, TypeScript, JavaScript
-- **Mobile:** Android SDK, iOS SDK, React Native
-- **Databases:** Aerospike, MySQL
-- **Infrastructure:** Kafka, AWS, Kubernetes, Docker, Devtron
-- **Tools:** JMeter, Prometheus, Grafana, Git
-
-### Key Achievements
-- Built high-performance push notification service handling **150,000+ events per minute**
-- Developed silent push backend processing **230,000+ events per minute**
-- Optimized critical performance bottlenecks improving throughput by **30x**
-- Led migration from legacy Node.js to Java Spring Boot architecture
-- Contributed to design systems and component libraries at scale
-
-### Contact
-- Email: koteswaruduakula@gmail.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/koteswarudu-akula-7087921a4/)
+<div style="text-align: center; margin-bottom: 2rem;">
+  <h1 style="color: #2c3e50; margin-bottom: 0.5rem;">Koteswarudu Akula</h1>
+  <h2 style="color: #7f8c8d; font-weight: 300; margin-bottom: 1rem;">Software Engineer</h2>
+  <p style="font-size: 1.2rem; color: #34495e; max-width: 600px; margin: 0 auto;">
+    Specializing in high-performance backend systems, mobile SDKs, and scalable applications that handle millions of events per minute
+  </p>
+</div>
 
 ---
 
-*This portfolio showcases my journey from learning front-end development to building high-performance backend systems that serve millions of users.*
+## 🚀 Featured Experience
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; margin: 2rem 0; color: white;">
+  <h3 style="margin-top: 0; color: white;">
+    <a href="Experience/lemnisk_experience.html" style="color: white; text-decoration: none;">
+      🏆 My Journey at a MarTech Company: From Curious Intern to Full-Stack Engineer
+    </a>
+  </h3>
+  <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+    Built high-performance systems handling <strong>150,000+ events per minute</strong>, architected scalable push notification services, and optimized critical performance bottlenecks achieving <strong>30x improvements</strong>.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Java Spring Boot</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Node.js</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Kafka</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">AWS</span>
+  </div>
+</div>
+
+## 💼 Experience
+
+<div style="display: grid; gap: 1.5rem; margin: 2rem 0;">
+  
+  <div style="border: 2px solid #3498db; border-radius: 8px; padding: 1.5rem; background: #f8f9fa;">
+    <h3 style="color: #2c3e50; margin-top: 0;">
+      <a href="Experience/lemnisk_experience.html" style="color: #3498db; text-decoration: none;">
+        📊 MarTech Company - Software Engineer
+      </a>
+    </h3>
+    <p style="color: #7f8c8d; margin: 0.5rem 0;"><strong>Jan 2023 - Present</strong> | Full-time + Internship</p>
+    <p>Built scalable backend systems, optimized performance bottlenecks, and developed mobile SDKs. Key achievements include 30x performance improvements and handling 150K+ events/minute.</p>
+  </div>
+
+  <div style="border: 2px solid #9b59b6; border-radius: 8px; padding: 1.5rem; background: #f8f9fa;">
+    <h3 style="color: #2c3e50; margin-top: 0;">
+      <a href="Experience/gojek_experience.html" style="color: #9b59b6; text-decoration: none;">
+        🎨 Gojek - Frontend Development Intern
+      </a>
+    </h3>
+    <p style="color: #7f8c8d; margin: 0.5rem 0;"><strong>Summer 2022</strong> | Internship</p>
+    <p>Contributed to Apsara design system using React.js and TypeScript. Optimized UI components with Redix library for better performance and developer experience.</p>
+  </div>
+
+</div>
+
+## 🛠️ Technical Skills
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
+  
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px;">
+    <h4 style="color: #e74c3c; margin-top: 0;">🔧 Backend</h4>
+    <p>Java, Spring Boot, Node.js, Python</p>
+  </div>
+  
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px;">
+    <h4 style="color: #3498db; margin-top: 0;">🎨 Frontend</h4>
+    <p>React.js, TypeScript, JavaScript</p>
+  </div>
+  
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px;">
+    <h4 style="color: #f39c12; margin-top: 0;">📱 Mobile</h4>
+    <p>Android SDK, iOS SDK, React Native</p>
+  </div>
+  
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px;">
+    <h4 style="color: #27ae60; margin-top: 0;">☁️ Infrastructure</h4>
+    <p>Kafka, AWS, Kubernetes, Docker</p>
+  </div>
+
+</div>
+
+## 📈 Key Achievements
+
+- 🚀 **Performance Optimization**: Improved system throughput from 5K to 150K+ events per minute (30x improvement)
+- 🔧 **System Architecture**: Built scalable push notification service from scratch using Java Spring Boot
+- 📱 **Mobile SDKs**: Developed and maintained Android/iOS SDKs for millions of users
+- 🛠️ **Infrastructure**: Deployed applications on Kubernetes with monitoring and observability
+
+## 📞 Contact
+
+<div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: #34495e; color: white; border-radius: 8px;">
+  <p style="margin: 0.5rem 0;">
+    📧 <strong>Email:</strong> koteswaruduakula@gmail.com
+  </p>
+  <p style="margin: 0.5rem 0;">
+    💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/koteswarudu-akula-7087921a4" style="color: #3498db;">linkedin.com/in/koteswarudu-akula-7087921a4</a>
+  </p>
+  <p style="margin: 0.5rem 0;">
+    🐙 <strong>GitHub:</strong> <a href="https://github.com/akula-koteswarudu" style="color: #3498db;">github.com/akula-koteswarudu</a>
+  </p>
+</div>
