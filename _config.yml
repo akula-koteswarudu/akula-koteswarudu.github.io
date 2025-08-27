@@ -3,12 +3,12 @@ description: Software Engineer specializing in high-performance backend systems 
 baseurl: ""
 url: "https://akula-koteswarudu.github.io"
 
-# Theme
-theme: cayman
+# Theme - using remote_theme for better compatibility
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Social links
 github_username: akula-koteswarudu
-linkedin_username: your-linkedin-username
+linkedin_username: koteswarudu-akula-7087921a4
 
 # SEO
 author: Koteswarudu Akula
@@ -16,11 +16,12 @@ twitter:
   username: your-twitter # optional
   card: summary
 
-# Plugins
+# Plugins (only GitHub Pages supported ones)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Exclude files
 exclude:
