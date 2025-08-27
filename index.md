@@ -1,15 +1,8 @@
 ---
 layout: default
-title: Home
+title: Koteswarudu Akula
+description: Software Engineer
 ---
-
-<div style="text-align: center; margin-bottom: 2rem;">
-  <h1 style="color: #2c3e50; margin-bottom: 0.5rem;">Koteswarudu Akula</h1>
-  <h2 style="color: #7f8c8d; font-weight: 300; margin-bottom: 1rem;">Software Engineer</h2>
-  <p style="font-size: 1.2rem; color: #34495e; max-width: 600px; margin: 0 auto;">
-    Specializing in high-performance backend systems, mobile SDKs, and scalable applications that handle millions of events per minute
-  </p>
-</div>
 
 ---
 
