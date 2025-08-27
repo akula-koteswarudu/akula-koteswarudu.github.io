@@ -488,7 +488,7 @@
     </div>
   </div>
 
-  <div style="background: linear-gradient(135d, #27ae60 0%, #2ecc71 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+  <div style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #27ae60; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
       <span style="color: white; font-weight: bold;">13</span>
     </div>
