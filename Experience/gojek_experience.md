@@ -50,14 +50,14 @@
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        **Key Activities:**
+        <strong>Key Activities:</strong>
       </p>
       <ul style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; padding: 0; list-style: none;">
-        <li style="margin-bottom: 0.5rem;">- **Developed React components** using TypeScript for better type safety and maintainability</li>
-        <li style="margin-bottom: 0.5rem;">- **Optimized existing UI components** using the Redix library to improve performance and simplicity</li>
-        <li style="margin-bottom: 0.5rem;">- **Rewrote components** with better performance characteristics and simpler APIs</li>
-        <li style="margin-bottom: 0.5rem;">- **Tested and documented** component changes for other developers</li>
-        <li style="margin-bottom: 0.5rem;">- **Ensured backward compatibility** to minimize disruption</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Developed React components</strong> using TypeScript for better type safety and maintainability</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Optimized existing UI components</strong> using the Redix library to improve performance and simplicity</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Rewrote components</strong> with better performance characteristics and simpler APIs</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Tested and documented</strong> component changes for other developers</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Ensured backward compatibility</strong> to minimize disruption</li>
       </ul>
     </div>
   </div>
@@ -73,12 +73,12 @@
         This internship gave me hands-on experience with:
       </p>
       <ul style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; padding: 0; list-style: none;">
-        <li style="margin-bottom: 0.5rem;">- **React.js** - Component-based architecture and modern patterns</li>
-        <li style="margin-bottom: 0.5rem;">- **TypeScript** - Static typing, interfaces, and type safety</li>
-        <li style="margin-bottom: 0.5rem;">- **Redix Library** - Building primitive, composable UI components</li>
-        <li style="margin-bottom: 0.5rem;">- **Design Systems** - Principles of consistent, reusable UI development</li>
-        <li style="margin-bottom: 0.5rem;">- **Performance Optimization** - Bundle size reduction and render performance</li>
-        <li style="margin-bottom: 0.5rem;">- **Component Testing** - Ensuring reliability across different use cases</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>React.js</strong> - Component-based architecture and modern patterns</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>TypeScript</strong> - Static typing, interfaces, and type safety</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Redix Library</strong> - Building primitive, composable UI components</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Design Systems</strong> - Principles of consistent, reusable UI development</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Performance Optimization</strong> - Bundle size reduction and render performance</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Component Testing</strong> - Ensuring reliability across different use cases</li>
       </ul>
     </div>
   </div>
@@ -94,10 +94,10 @@
         Working on a design system taught me valuable lessons about:
       </p>
       <ul style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; padding: 0; list-style: none;">
-        <li style="margin-bottom: 0.5rem;">- **Component Reusability** - Building components that work across different contexts</li>
-        <li style="margin-bottom: 0.5rem;">- **Developer Experience** - Creating components that are easy to understand and use</li>
-        <li style="margin-bottom: 0.5rem;">- **Documentation** - Writing clear examples and usage guidelines</li>
-        <li style="margin-bottom: 0.5rem;">- **Composition over Inheritance** - Building complex interfaces from simple, focused components</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Component Reusability</strong> - Building components that work across different contexts</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Developer Experience</strong> - Creating components that are easy to understand and use</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Documentation</strong> - Writing clear examples and usage guidelines</li>
+        <li style="margin-bottom: 0.5rem;">- <strong>Composition over Inheritance</strong> - Building complex interfaces from simple, focused components</li>
       </ul>
     </div>
   </div>
