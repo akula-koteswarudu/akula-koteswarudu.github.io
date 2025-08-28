@@ -99,7 +99,7 @@
         <div style="background: linear-gradient(135deg, #e74c3c, #c0392b); padding: 2rem; border-radius: 12px; color: white; margin-left: auto; max-width: 400px;">
           <h3 style="margin-top: 0; color: white;">Technical Innovation & Growth</h3>
           <p style="margin-bottom: 1rem; opacity: 0.9;">Key Innovations</p>
-          <p style="margin-bottom: 1.5rem; line-height: 1.5;">Performance optimizations, infrastructure improvements, and innovative solutions that transformed system capabilities.</p>
+          <p style="margin-bottom: 1.5rem; line-height: 1.5;">Technical innovations, complex problem-solving, infrastructure management, and system reliability improvements.</p>
           <a href="lemnisk_technical.html" style="background: rgba(255,255,255,0.2); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold;">
             🔧 See Achievements →
           </a>
