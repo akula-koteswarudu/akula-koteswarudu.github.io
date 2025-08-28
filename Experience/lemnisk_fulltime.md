@@ -193,7 +193,7 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        One of the most satisfying moments of my career came from what seemed like a trivial change. While performance testing our Android notification flow, I noticed we were hitting a throughput ceiling around 33,000 events per minute. Something was creating a bottleneck, but it wasn't obvious what.
+        One of the most satisfying moments of my career came from what seemed like a trivial change. While performance testing our Android notification flow with Lambda batching, I noticed we were hitting a throughput ceiling around 33,000 events per minute. Something was creating a bottleneck, but it wasn't obvious what.
       </p>
     </div>
 
@@ -237,10 +237,6 @@
     <div>
       <h4 style="color: #e67e22; margin-bottom: 0.5rem;">🏛️ Enterprise Ready</h4>
       <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Successfully transitioned to working with banking clients, implementing enterprise-grade security and compliance requirements.</p>
-    </div>
-    <div>
-      <h4 style="color: #1abc9c; margin-bottom: 0.5rem;">🔒 Security Expert</h4>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Designed and implemented end-to-end encryption systems that meet banking industry security standards.</p>
     </div>
     <div>
       <h4 style="color: #8e44ad; margin-bottom: 0.5rem;">🏗️ System Architect</h4>

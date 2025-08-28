@@ -3,7 +3,7 @@
   <div style="position: absolute; bottom: -30px; left: -30px; width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   
   <h1 style="color: white; margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-    💡 Technical Excellence
+    💡 Technical Innovation & Growth
   </h1>
   <p style="font-size: 1.3rem; margin: 1rem 0 0 0; color: rgba(255,255,255,0.9); font-style: italic;">
     Sections 11-15 from the original journey • Advanced Systems & Innovation
@@ -198,9 +198,9 @@
   </div>
   
   <div style="background: linear-gradient(135deg, #e74c3c, #c0392b); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
-    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎯</div>
-    <h3 style="margin: 0.5rem 0; color: white;">99.7% Reliability</h3>
-    <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Notification delivery success rate</p>
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔧</div>
+    <h3 style="margin: 0.5rem 0; color: white;">Problem Solver</h3>
+    <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Complex debugging & issue resolution</p>
   </div>
   
   <div style="background: linear-gradient(135deg, #2ecc71, #27ae60); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
@@ -209,11 +209,6 @@
     <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Node.js to Java Spring Boot</p>
   </div>
   
-  <div style="background: linear-gradient(135deg, #f39c12, #e67e22); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
-    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔒</div>
-    <h3 style="margin: 0.5rem 0; color: white;">Banking Security</h3>
-    <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Enterprise-grade encryption</p>
-  </div>
 </div>
 
 ## 🛠️ Core Technologies Mastered
@@ -227,15 +222,15 @@
     </div>
     <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
       <h4 style="color: #e74c3c; margin-top: 0;">Infrastructure</h4>
-      <p style="margin: 0; opacity: 0.9;">Kubernetes, Docker, AWS, Jenkins CI/CD</p>
+      <p style="margin: 0; opacity: 0.9;">devtrons- k8s, AWS (EC2, Lambda, Secrets, Load Balancers etc)</p>
     </div>
     <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
       <h4 style="color: #2ecc71; margin-top: 0;">Data & Messaging</h4>
-      <p style="margin: 0; opacity: 0.9;">Kafka, Redis, PostgreSQL, MongoDB</p>
+      <p style="margin: 0; opacity: 0.9;">Kafka, MySQL, Aerospike</p>
     </div>
     <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
       <h4 style="color: #f39c12; margin-top: 0;">Monitoring</h4>
-      <p style="margin: 0; opacity: 0.9;">Prometheus, Grafana, ELK Stack</p>
+      <p style="margin: 0; opacity: 0.9;">Prometheus, Grafana, Elastic Search, Monit</p>
     </div>
   </div>
 </div>
