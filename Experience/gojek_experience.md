@@ -13,8 +13,8 @@
 <div style="position: relative; margin-left: 3rem;">
   <div style="position: absolute; left: -3rem; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, #9b59b6, #3498db, #2ecc71, #f39c12, #e74c3c, #1abc9c); border-radius: 2px;"></div>
 
-  <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
-    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #9b59b6; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+  <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #3498db; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
       <span style="color: white; font-weight: bold;">1</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🚀 The Opportunity</h2>
@@ -53,11 +53,11 @@
         <strong>Key Activities:</strong>
       </p>
       <ul style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; padding: 0; list-style: none;">
-        <li style="margin-bottom: 0.5rem;">- <strong>Developed React components</strong> using TypeScript for better type safety and maintainability</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Optimized existing UI components</strong> using the Redix library to improve performance and simplicity</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Rewrote components</strong> with better performance characteristics and simpler APIs</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Tested and documented</strong> component changes for other developers</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Ensured backward compatibility</strong> to minimize disruption</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Developed React components</strong> using TypeScript for better type safety and maintainability</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Optimized existing UI components</strong> using the Redix library to improve performance and simplicity</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Rewrote components</strong> with better performance characteristics and simpler APIs</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Tested and documented</strong> component changes for other developers</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Ensured backward compatibility</strong> to minimize disruption</li>
       </ul>
     </div>
   </div>
