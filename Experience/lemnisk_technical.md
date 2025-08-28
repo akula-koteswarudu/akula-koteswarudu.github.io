@@ -110,11 +110,11 @@
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
       <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐳</div>
-        <strong style="color: white;">Docker</strong>
+        <strong style="color: white;">Devtron - K8s</strong>
       </div>
-      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">☸️</div>
-        <strong style="color: white;">Kubernetes</strong>
+      <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗄️</div>
+        <strong>Aerospike - UDF's</strong>
       </div>
       <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
