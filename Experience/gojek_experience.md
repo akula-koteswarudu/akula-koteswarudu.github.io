@@ -73,38 +73,19 @@
         This internship gave me hands-on experience with:
       </p>
       <ul style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; padding: 0; list-style: none;">
-        <li style="margin-bottom: 0.5rem;">- <strong>React.js</strong> - Component-based architecture and modern patterns</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>TypeScript</strong> - Static typing, interfaces, and type safety</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Redix Library</strong> - Building primitive, composable UI components</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Design Systems</strong> - Principles of consistent, reusable UI development</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Performance Optimization</strong> - Bundle size reduction and render performance</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Component Testing</strong> - Ensuring reliability across different use cases</li>
-      </ul>
-    </div>
-  </div>
-
-  <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative; margin-top: 3rem;">
-    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #9b59b6; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">4</span>
-    </div>
-    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">💡 Key Learnings</h2>
-    
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Working on a design system taught me valuable lessons about:
-      </p>
-      <ul style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; padding: 0; list-style: none;">
-        <li style="margin-bottom: 0.5rem;">- <strong>Component Reusability</strong> - Building components that work across different contexts</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Developer Experience</strong> - Creating components that are easy to understand and use</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Documentation</strong> - Writing clear examples and usage guidelines</li>
-        <li style="margin-bottom: 0.5rem;">- <strong>Composition over Inheritance</strong> - Building complex interfaces from simple, focused components</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>React.js</strong> - Component-based architecture and modern patterns</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>TypeScript</strong> - Static typing, interfaces, and type safety</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Redix Library</strong> - Building primitive, composable UI components</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Design Systems</strong> - Principles of consistent, reusable UI development</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Performance Optimization</strong> - Bundle size reduction and render performance</li>
+        <li style="margin-bottom: 0.5rem;"> <strong>Component Testing</strong> - Ensuring reliability across different use cases</li>
       </ul>
     </div>
   </div>
 
   <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #3498db; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">5</span>
+      <span style="color: white; font-weight: bold;">4</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🎯 Impact & Results</h2>
     
@@ -113,12 +94,6 @@
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚀</div>
         <h4 style="color: white; margin: 0.5rem 0;">Foundation Built</h4>
         <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9rem;">Solid foundation in front-end development and professional software practices</p>
-      </div>
-      
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
-        <h4 style="color: white; margin: 0.5rem 0;">Performance Focus</h4>
-        <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9rem;">Learned to optimize components for better performance and developer experience</p>
       </div>
       
       <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
@@ -136,7 +111,7 @@
 
   <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #2ecc71; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">6</span>
+      <span style="color: white; font-weight: bold;">5</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🛠️ Technologies & Tools</h2>
     
