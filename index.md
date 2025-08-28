@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Koteswarudu Akula
-description: Software Engineer
+description: Software Development Engineer
 ---
 
 ---
@@ -39,6 +39,18 @@ description: Software Engineer
     <p>Contributed to Apsara design system using React.js and TypeScript. Optimized UI components with Redix library for better performance and developer experience.</p>
   </div>
 
+</div>
+
+## 🎓 Education
+
+<div style="border: 2px solid #3498db; border-radius: 8px; padding: 1.5rem; background: #f8f9fa; margin: 2rem 0;">
+  <h3 style="color: #2c3e50; margin-top: 0;">
+    <a href="education.html" style="color: #3498db; text-decoration: none;">
+      🏛️ BITS Pilani, Hyderabad Campus
+    </a>
+  </h3>
+  <p style="color: #7f8c8d; margin: 0.5rem 0;"><strong>2023 Graduate</strong> | B.E. Computer Science | CGPA: 8.23</p>
+  <p>Strong foundation in systems programming, algorithms, and software development. Key coursework: Operating Systems, Database Systems, Object Oriented Programming with Java, Machine Learning, Data Structures and Algorithms.</p>
 </div>
 
 ## 🛠️ Technical Skills
@@ -82,8 +94,5 @@ description: Software Engineer
   </p>
   <p style="margin: 0.5rem 0;">
     💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/koteswarudu-akula-7087921a4" style="color: #3498db;">linkedin.com/in/koteswarudu-akula-7087921a4</a>
-  </p>
-  <p style="margin: 0.5rem 0;">
-    🐙 <strong>GitHub:</strong> <a href="https://github.com/akula-koteswarudu" style="color: #3498db;">github.com/akula-koteswarudu</a>
   </p>
 </div>
