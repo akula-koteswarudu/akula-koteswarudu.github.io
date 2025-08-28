@@ -1,12 +1,13 @@
-<div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); padding: 3rem 2rem; border-radius: 20px; margin-bottom: 2rem; color: white; text-align: center; position: relative; overflow: hidden;">
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 2rem; border-radius: 20px; margin-bottom: 2rem; color: white; text-align: center; position: relative; overflow: hidden;">
   <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   <div style="position: absolute; bottom: -30px; left: -30px; width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   
   <h1 style="color: white; margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-    🌱 The Curious Intern
+    🌱 The Curious Intern: Internship Journey
   </h1>
+
   <p style="font-size: 1.3rem; margin: 1rem 0 0 0; color: rgba(255,255,255,0.9); font-style: italic;">
-    January 2023 - July 2023 • From YouTube Tutorials to Real Impact
+    January 2023 - July 2023 • Sections 1-5 from the original journey
   </p>
 </div>
 
@@ -152,59 +153,34 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        As my internship progressed, I was given more responsibility in infrastructure optimization. I worked on improving our monitoring systems, setting up better alerting mechanisms, and documenting processes that would help future team members understand our complex notification pipeline.
+        Between incidents, I found myself working on infrastructure improvements alongside our principal engineer. Our AWS setup had evolved organically, with separate load balancers for different applications – but since our traffic wasn't that high, separate load balancers were unnecessary and costly. The principal engineer identified this inefficiency and guided me through implementing a consolidation strategy, moving to single load balancers with intelligent routing rules for both production and staging environments, significantly reducing our infrastructure costs.
       </p>
     </div>
 
-    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin-bottom: 1rem;">
-        One of my proudest achievements during the internship was creating a comprehensive troubleshooting guide for common notification delivery issues. This guide, based on all the problems I had encountered and solved, became a valuable resource for the entire team and significantly reduced the time needed to resolve similar issues in the future.
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        I also worked with him to set up proper monitoring for several production applications that lacked visibility. Together, we implemented Monit and Node Exporters across these systems, dramatically improving our ability to monitor application health. These weren't glamorous tasks, but they were the kind of foundational work that prevents 3 AM outages.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
-        <strong style="color: white;">Monitoring</strong>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">☁️</div>
+        <strong style="color: white;">AWS Optimization</strong>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🚨</div>
-        <strong style="color: white;">Alerting</strong>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+        <strong style="color: white;">Monitoring Setup</strong>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📚</div>
-        <strong style="color: white;">Documentation</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔧</div>
-        <strong style="color: white;">Troubleshooting</strong>
-      </div>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">💰 Impact:</strong> Significantly reduced infrastructure costs while improving system visibility and reliability
     </div>
   </div>
 
 </div>
 
-## 🎯 Internship Impact Summary
-
-<div style="background: linear-gradient(135deg, #34495e, #2c3e50); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0;">
-  <h3 style="color: white; margin-top: 0;">What I Accomplished in 6 Months</h3>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-    <div>
-      <h4 style="color: #3498db; margin-bottom: 0.5rem;">🐛 Bug Hunter</h4>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Found and reported multiple critical bugs in the Android SDK, leading to improved reliability for millions of users.</p>
-    </div>
-    <div>
-      <h4 style="color: #e74c3c; margin-bottom: 0.5rem;">🚀 Performance Pioneer</h4>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Achieved 3x improvement in notification processing speed through experimental parallel processing approaches.</p>
-    </div>
-    <div>
-      <h4 style="color: #2ecc71; margin-bottom: 0.5rem;">🔥 Crisis Resolver</h4>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Successfully handled production outages during on-call rotations, earning recognition from senior leadership.</p>
-    </div>
-  </div>
-</div>
-
----
 
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
   <h3 style="color: #2c3e50; margin-bottom: 1rem;">Continue the Journey</h3>
@@ -215,7 +191,7 @@
       ← Back to Overview
     </a>
     <a href="lemnisk_fulltime.html" style="background: #9b59b6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      🚀 Full-Time Journey →
+      Full-Time Journey →
     </a>
   </div>
 </div>

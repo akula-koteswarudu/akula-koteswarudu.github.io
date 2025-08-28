@@ -1,12 +1,12 @@
-<div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); padding: 3rem 2rem; border-radius: 20px; margin-bottom: 2rem; color: white; text-align: center; position: relative; overflow: hidden;">
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 2rem; border-radius: 20px; margin-bottom: 2rem; color: white; text-align: center; position: relative; overflow: hidden;">
   <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   <div style="position: absolute; bottom: -30px; left: -30px; width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   
   <h1 style="color: white; margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-    ⚡ Technical Excellence
+    💡 Technical Excellence
   </h1>
   <p style="font-size: 1.3rem; margin: 1rem 0 0 0; color: rgba(255,255,255,0.9); font-style: italic;">
-    Innovations, Optimizations & Problem-Solving Achievements
+    Sections 11-15 from the original journey • Advanced Systems & Innovation
   </p>
 </div>
 

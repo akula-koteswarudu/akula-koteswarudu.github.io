@@ -1,12 +1,12 @@
-<div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 3rem 2rem; border-radius: 20px; margin-bottom: 2rem; color: white; text-align: center; position: relative; overflow: hidden;">
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 2rem; border-radius: 20px; margin-bottom: 2rem; color: white; text-align: center; position: relative; overflow: hidden;">
   <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   <div style="position: absolute; bottom: -30px; left: -30px; width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
   
   <h1 style="color: white; margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-    🚀 Full-Time Evolution
+    🚀 The Full-Time Evolution
   </h1>
   <p style="font-size: 1.3rem; margin: 1rem 0 0 0; color: rgba(255,255,255,0.9); font-style: italic;">
-    August 2023 - Present • From Intern to Full-Stack Engineer
+    July 2023 - Present • Sections 6-10 from the original journey
   </p>
 </div>
 
@@ -21,36 +21,39 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        August 2023 marked a pivotal moment – my transition from intern to full-time Software Engineer. But this wasn't just a title change; it came with an entirely new challenge: working with banking clients who had security requirements unlike anything I'd encountered before.
+        When my internship ended and I transitioned to a full-time SDE role, I thought I understood what I was getting into. I was wrong. The banking client stack was a completely different beast – simpler in some ways, but carrying the weight of being one of our most critical clients. This was a bank's critical infrastructure, and there was no room for error.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Banking clients don't just want their systems to work – they need them to be bulletproof. Every piece of data had to be encrypted, every API call authenticated, and every system designed with multiple layers of security. This was my introduction to enterprise-grade software development, where "good enough" simply doesn't exist.
+        The banking client's world revolved around two fundamental flows: promotional campaigns that arrived as batch files via SFTP, and real-time transactional notifications that came through socket connections. Each flow had its own personality, its own challenges, and its own requirements for reliability and security.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏛️</div>
-        <strong style="color: white;">Banking Sector</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Enterprise clients</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📁</div>
+          <strong style="color: white; display: block;">Promotional Flow</strong>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0;">
+          The promotional flow felt like watching a well-orchestrated machine. Files would arrive on our SFTP server, get picked up by cron jobs, transferred to processing VMs where Flume applications would transform and validate the data before feeding it into Kafka. It was batch processing at scale, requiring careful attention to error handling and data integrity.
+        </p>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔒</div>
-        <strong style="color: white;">Security First</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Bulletproof systems</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
-        <strong style="color: white;">Enterprise Scale</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Mission-critical</p>
+      <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+          <strong style="color: white; display: block;">Transactional Flow</strong>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0;">
+          The transactional flow was the complete opposite – real-time, high-stakes, and demanding instant responses. Notifications would arrive through our Node.js socket applications, get authenticated, validated, and immediately pushed into Kafka topics for processing. The margin for error was essentially zero.
+        </p>
       </div>
     </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5); margin-top: 1.5rem;">
-      <strong style="color: white;">🎯 New Reality:</strong> Transitioned from experimental projects to mission-critical banking infrastructure
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🎯 Mission Critical:</strong> Banking infrastructure with zero tolerance for errors
     </div>
   </div>
 
