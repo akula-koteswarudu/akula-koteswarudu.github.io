@@ -61,7 +61,7 @@
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #1abc9c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
       <span style="color: white; font-weight: bold;">7</span>
     </div>
-    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🔒 The Security Challenge: Understanding Bulletproof Encryption</h2>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🔒 The Security Challenge: Understanding Encryption</h2>
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
