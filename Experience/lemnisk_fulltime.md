@@ -61,23 +61,17 @@
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #1abc9c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
       <span style="color: white; font-weight: bold;">7</span>
     </div>
-    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🔒 The Security Challenge: Building Bulletproof Encryption</h2>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🔒 The Security Challenge: Understanding Bulletproof Encryption</h2>
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Working with financial services clients meant that security couldn't be an afterthought. The transactional flow required a sophisticated two-step encryption process that I had to master completely. Every user device would generate unique RSA key pairs through our SDK, sending the public keys to our backend for storage in Aerospike.
+        Working with financial services clients meant that security couldn't be an afterthought. The transactional flow required a sophisticated two-step encryption process that I had to master completely. Every user device would generate unique RSA key pairs through our SDK, sending the public keys to our backend for storage in Aerospike. When sending notifications, we would generate a fresh AES key for each message, encrypt the notification payload with this AES key, then encrypt the AES key itself using the device's specific RSA public key.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        When sending notifications, we would generate a fresh AES key for each message, encrypt the notification payload with this AES key, then encrypt the AES key itself using the device's specific RSA public key. Both pieces would be sent together, allowing only that specific device to decrypt and display the notification. It was an elegant and secure approach.
-      </p>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The system also needed to track user consent at a granular level – both promotional and transactional notifications required explicit user permission. Our SDK would capture consent from users in the client app and send it to our backend, where it was stored at the user level in Aerospike for validation during notification processing.
+        The system also needed to track user consent at a granular level – both promotional and transactional notifications required explicit user permission. Our SDK would capture consent from users in the client app and send it to our backend, where it was stored at the user level in Aerospike for validation during notification processing. It was an elegant and secure approach that ensured only authorized devices could decrypt and display notifications.
       </p>
     </div>
 
@@ -157,7 +151,7 @@
 
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The architecture I built was something I'm genuinely proud of. Using SOLID principles and carefully chosen design patterns, I created a system of abstractions and interfaces that could handle not just the banking client's specific requirements, but also the varied payload types from our main Marketing Automation flow used by all other clients. The code was designed for reusability, maintainability, and future extensibility.
+        The architecture I built was something I'm genuinely proud of. Using SOLID principles and carefully chosen design patterns, I created a system of abstractions and interfaces that could handle not just the banking client's specific requirements, but also the varied payload types from our main Marketing Automation flow used by all other clients. The results were staggering – on the exact same hardware that struggled with 5,000 events per minute in Node.js, our Java application processed 150,000 events per minute. We rolled it out across all regions and all clients, replacing years of accumulated technical debt with a single, unified solution.
       </p>
     </div>
 
@@ -176,12 +170,6 @@
 
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
       <strong style="color: white;">🎯 Revolutionary Result:</strong> 30x performance improvement on the same hardware - replaced years of technical debt with a unified solution
-    </div>
-
-    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        When we finally deployed the Java push sender, the results were staggering. On the exact same hardware that struggled to handle 5,000 events per minute in Node.js, our Java application was processing 150,000 events per minute – a 30x performance improvement. We rolled it out across all regions and all clients, replacing years of accumulated technical debt with a single, unified solution.
-      </p>
     </div>
   </div>
 
@@ -236,7 +224,7 @@
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
     <div>
       <h4 style="color: #e67e22; margin-bottom: 0.5rem;">🏛️ Enterprise Ready</h4>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Successfully transitioned to working with banking clients, implementing enterprise-grade security and compliance requirements.</p>
+      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">Successfully transitioned to working with banking clients, understanding enterprise-grade security and compliance requirements.</p>
     </div>
     <div>
       <h4 style="color: #8e44ad; margin-bottom: 0.5rem;">🏗️ System Architect</h4>
