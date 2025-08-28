@@ -259,7 +259,7 @@
       Back to Overview
     </a>
     <a href="lemnisk_technical.html" style="background: #e74c3c; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      Technical Achievements →
+      Technical Innovations and Problem-Solving →
     </a>
   </div>
 </div>
