@@ -200,8 +200,11 @@
   <p style="color: #7f8c8d; margin-bottom: 2rem;">See how this internship foundation led to even greater challenges and achievements</p>
   
   <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="../index.html" style="background: #34495e; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
+      ← Back to Home
+    </a>
     <a href="lemnisk_overview.html" style="background: #95a5a6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      ← Back to Overview
+      Back to Overview
     </a>
     <a href="lemnisk_fulltime.html" style="background: #9b59b6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       Full-Time Journey →

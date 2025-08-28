@@ -172,6 +172,9 @@
   <p style="color: #7f8c8d; margin-bottom: 2rem;">Choose your path through my journey at this MarTech company</p>
   
   <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="../index.html" style="background: #95a5a6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
+      ← Back to Home
+    </a>
     <a href="lemnisk_internship.html" style="background: #3498db; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       🌱 Internship Story
     </a>

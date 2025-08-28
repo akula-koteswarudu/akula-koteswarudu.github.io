@@ -239,9 +239,9 @@
   <h3 style="color: #2c3e50; margin-bottom: 1rem;">Explore More of the Journey</h3>
   <p style="color: #7f8c8d; margin-bottom: 2rem;">Discover the technical innovations and problem-solving achievements</p>
   
-  <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-    <a href="lemnisk_internship.html" style="background: #3498db; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      ← Internship Story
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="../index.html" style="background: #34495e; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
+      ← Back to Home
     </a>
     <a href="lemnisk_overview.html" style="background: #95a5a6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       Back to Overview

@@ -234,8 +234,8 @@
   <p style="color: #7f8c8d; margin-bottom: 2rem;">Explore the full story of growth and transformation</p>
   
   <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-    <a href="lemnisk_internship.html" style="background: #3498db; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      🌱 Internship Story
+    <a href="../index.html" style="background: #34495e; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
+      ← Back to Home
     </a>
     <a href="lemnisk_fulltime.html" style="background: #9b59b6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       🚀 Full-Time Journey

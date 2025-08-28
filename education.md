@@ -21,7 +21,7 @@ description: Academic Background and Technical Foundation
 
   <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #3498db; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">🏛️</span>
+      <span style="color: white; font-weight: bold;">1</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🏛️ BITS Pilani, Hyderabad Campus</h2>
     
@@ -42,7 +42,7 @@ description: Academic Background and Technical Foundation
 
   <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #9b59b6; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">📚</span>
+      <span style="color: white; font-weight: bold;">2</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">📚 Core Technical Coursework</h2>
     
@@ -91,7 +91,7 @@ description: Academic Background and Technical Foundation
 
   <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">🌉</span>
+      <span style="color: white; font-weight: bold;">3</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🌉 Academic to Industry Bridge</h2>
     
@@ -118,6 +118,67 @@ description: Academic Background and Technical Foundation
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
         The combination of theoretical knowledge and hands-on programming experience enabled me to quickly adapt to professional development environments and contribute meaningfully to production systems from the start of my career.
       </p>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #2ecc71; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: white; font-weight: bold;">4</span>
+    </div>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">💻 College Projects: Building Foundations</h2>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        During my college years, I worked on several projects that laid the foundation for my programming journey. While these were learning experiences rather than production-ready applications, they sparked my interest in software development and taught me essential concepts that I later applied in professional settings.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+          <strong style="color: white; display: block;">Daily Manager App</strong>
+          <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Android • Java • Firebase</span>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9rem; text-align: center;">
+          Task management app with categories, reminders, and personal diary features
+        </p>
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="https://github.com/akula-koteswarudu/daily-manager-app" style="color: rgba(255,255,255,0.8); font-size: 0.8rem; text-decoration: none;">View on GitHub →</a>
+        </div>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
+          <strong style="color: white; display: block;">Healthcare Chatbot</strong>
+          <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Android • Python • AIML</span>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9rem; text-align: center;">
+          AI chatbot for memory loss patients with personalized assistance features
+        </p>
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="https://github.com/akula-koteswarudu/Android-chat-bot-app" style="color: rgba(255,255,255,0.8); font-size: 0.8rem; text-decoration: none;">View on GitHub →</a>
+        </div>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
+          <strong style="color: white; display: block;">Property Marketplace</strong>
+          <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Java • JSP • MySQL</span>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9rem; text-align: center;">
+          Web platform for property listings with search, chat, and payment tracking
+        </p>
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="https://github.com/akula-koteswarudu/Selling-and-Buying-web-app" style="color: rgba(255,255,255,0.8); font-size: 0.8rem; text-decoration: none;">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🌱 Learning Impact:</strong> These projects introduced me to full-stack development concepts, database design, and user interface creation - skills that became essential in my professional journey at Lemnisk and Gojek.
     </div>
   </div>
 
