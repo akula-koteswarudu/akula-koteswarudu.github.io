@@ -46,10 +46,16 @@
       </div>
       
       <div style="width: 45%; padding-right: 2rem;">
-        <div style="background: linear-gradient(135deg, #3498db, #2980b9); padding: 2rem; border-radius: 12px; color: white; margin-left: auto; max-width: 400px;">
+        <div style="background: linear-gradient(135deg, #3498db, #2980b9); padding: 2rem; border-radius: 12px; color: white; margin-left: auto; max-width: 400px; position: relative;">
+          <div style="position: absolute; top: -10px; right: -10px; background: #e74c3c; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            ⚡ Not Your Typical Internship
+          </div>
           <h3 style="margin-top: 0; color: white;">The Curious Intern</h3>
           <p style="margin-bottom: 1rem; opacity: 0.9;">Jan 2023 - Jul 2023</p>
           <p style="margin-bottom: 1.5rem; line-height: 1.5;">From YouTube tutorials to finding SDK bugs, solving Android API challenges, and building my first real contributions.</p>
+          <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid rgba(255,255,255,0.3);">
+            <p style="margin: 0; font-size: 0.9rem; opacity: 0.95; font-style: italic;">💡 This wasn't coffee-fetching or shadowing - I was solving real production issues, contributing to critical systems, and making meaningful impact from day one.</p>
+          </div>
           <a href="lemnisk_internship.html" style="background: rgba(255,255,255,0.2); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold;">
             📖 Read Full Story →
           </a>
@@ -72,7 +78,7 @@
       </div>
       
       <div style="width: 45%; padding-left: 2rem;">
-        <div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); padding: 2rem; border-radius: 12px; color: white; max-width: 400px;">
+        <div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); padding: 2rem; border-radius: 12px; color: white; max-width: 400px; margin-left: 1rem;">
           <h3 style="margin-top: 0; color: white;">Full-Time Evolution</h3>
           <p style="margin-bottom: 1rem; opacity: 0.9;">Aug 2023 - Present</p>
           <p style="margin-bottom: 1.5rem; line-height: 1.5;">Banking clients, security challenges, and scaling systems to handle massive loads while maintaining reliability.</p>
