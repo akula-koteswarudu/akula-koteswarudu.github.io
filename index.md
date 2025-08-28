@@ -10,7 +10,7 @@ description: Software Engineer
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; margin: 2rem 0; color: white;">
   <h3 style="margin-top: 0; color: white;">
-    <a href="Experience/lemnisk_experience.html" style="color: white; text-decoration: none;">
+    <a href="Experience/lemnisk_overview.html" style="color: white; text-decoration: none;">
       🏆 My Journey at a MarTech Company: From Curious Intern to Full-Stack Engineer
     </a>
   </h3>
