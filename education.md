@@ -89,41 +89,9 @@ description: Academic Background and Technical Foundation
     </div>
   </div>
 
-  <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
-    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">3</span>
-    </div>
-    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🌉 Academic to Industry Bridge</h2>
-    
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The strong academic foundation from BITS Pilani directly translated into my professional success. The rigorous coursework in algorithms, system design, and programming fundamentals prepared me to tackle complex real-world challenges from day one of my internship.
-      </p>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
-      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
-        <strong style="color: white; display: block;">Academic Excellence</strong>
-        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">8.23 CGPA</span>
-      </div>
-      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚀</div>
-        <strong style="color: white; display: block;">Industry Ready</strong>
-        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Immediate Impact</span>
-      </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The combination of theoretical knowledge and hands-on programming experience enabled me to quickly adapt to professional development environments and contribute meaningfully to production systems from the start of my career.
-      </p>
-    </div>
-  </div>
-
   <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
     <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #2ecc71; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-weight: bold;">4</span>
+      <span style="color: white; font-weight: bold;">3</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">💻 College Projects: Building Foundations</h2>
     
