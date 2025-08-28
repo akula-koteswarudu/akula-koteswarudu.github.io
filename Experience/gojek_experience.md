@@ -62,8 +62,8 @@
     </div>
   </div>
 
-  <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative; margin-top: 3rem;">
-    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #9b59b6; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+  <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative; margin-top: 3rem;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #f39c12; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
       <span style="color: white; font-weight: bold;">3</span>
     </div>
     <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">📚 Technical Skills Gained</h2>
