@@ -112,17 +112,13 @@
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐳</div>
         <strong style="color: white;">Devtron - K8s</strong>
       </div>
-      <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗄️</div>
-        <strong>Aerospike - UDF's</strong>
-      </div>
       <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
         <strong style="color: white;">Prometheus</strong>
       </div>
       <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
-        <strong style="color: white;">Grafana</strong>
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🗄️</div>
+        <strong style="color: white;">Aerospike</strong>
       </div>
     </div>
   </div>
@@ -135,7 +131,7 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Working with financial services clients meant that security couldn't be an afterthought. I implemented certificate pinning for iOS SDK API calls, designed secure token management systems, and ensured that every piece of sensitive data was handled with appropriate encryption and access controls. These weren't just technical requirements – they were about building systems that clients could trust with their most sensitive communications.
+        Working with financial services clients meant that security couldn't be an afterthought. I implemented certificate pinning for iOS SDK API calls by building a backend service that returns encrypted certificates to the SDK, allowing the SDK to retrieve and pin certificates on every app start for secure API communication. These weren't just technical requirements – they were about building systems that clients could trust with their most sensitive communications.
       </p>
     </div>
 
@@ -143,10 +139,6 @@
       <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">📌</div>
         <strong style="color: white;">Certificate Pinning</strong>
-      </div>
-      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔐</div>
-        <strong style="color: white;">Token Management</strong>
       </div>
       <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
