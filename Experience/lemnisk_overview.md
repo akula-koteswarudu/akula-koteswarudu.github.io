@@ -30,12 +30,6 @@
     <h3 style="margin: 0.5rem 0; color: white;">Mobile SDKs</h3>
     <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Android & iOS for millions</p>
   </div>
-  
-  <div style="background: linear-gradient(135deg, #f39c12, #e67e22); padding: 1.5rem; border-radius: 12px; text-align: center; color: white;">
-    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔒</div>
-    <h3 style="margin: 0.5rem 0; color: white;">Security</h3>
-    <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Banking-grade encryption</p>
-  </div>
 </div>
 
 ## 🗺️ Journey Timeline
@@ -55,7 +49,7 @@
         <div style="background: linear-gradient(135deg, #3498db, #2980b9); padding: 2rem; border-radius: 12px; color: white; margin-left: auto; max-width: 400px;">
           <h3 style="margin-top: 0; color: white;">The Curious Intern</h3>
           <p style="margin-bottom: 1rem; opacity: 0.9;">Jan 2023 - Jul 2023</p>
-          <p style="margin-bottom: 1.5rem; line-height: 1.5;">From YouTube tutorials to finding SDK bugs, solving Android API challenges, and building my first real systems.</p>
+          <p style="margin-bottom: 1.5rem; line-height: 1.5;">From YouTube tutorials to finding SDK bugs, solving Android API challenges, and building my first real contributions.</p>
           <a href="lemnisk_internship.html" style="background: rgba(255,255,255,0.2); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold;">
             📖 Read Full Story →
           </a>
