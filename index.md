@@ -4,8 +4,6 @@ title: Koteswarudu Akula
 description: Software Development Engineer
 ---
 
----
-
 ## 🚀 Featured Experience
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; margin: 2rem 0; color: white;">
@@ -74,7 +72,12 @@ description: Software Development Engineer
   
   <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px;">
     <h4 style="color: #27ae60; margin-top: 0;">☁️ Infrastructure</h4>
-    <p>Kafka, AWS, Kubernetes, Docker</p>
+    <p>Kafka, AWS, Devtron</p>
+  </div>
+  
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px;">
+    <h4 style="color: #9b59b6; margin-top: 0;">🗄️ Databases</h4>
+    <p>MySQL, Aerospike</p>
   </div>
 
 </div>
