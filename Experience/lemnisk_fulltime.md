@@ -435,8 +435,5 @@
     <a href="lemnisk_overview.html" style="background: #95a5a6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       Back to Overview
     </a>
-    <a href="lemnisk_technical.html" style="background: #e74c3c; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      Technical Achievements →
-    </a>
   </div>
 </div>

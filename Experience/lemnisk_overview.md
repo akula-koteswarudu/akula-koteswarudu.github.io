@@ -89,28 +89,6 @@
       </div>
     </div>
     
-    <!-- Technical Achievements -->
-    <div style="display: flex; align-items: center; position: relative;">
-      <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 3rem; height: 3rem; background: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2;">
-        <span style="color: white; font-size: 1.2rem;">⚡</span>
-      </div>
-      
-      <div style="width: 45%; padding-right: 2rem;">
-        <div style="background: linear-gradient(135deg, #e74c3c, #c0392b); padding: 2rem; border-radius: 12px; color: white; margin-left: auto; max-width: 400px;">
-          <h3 style="margin-top: 0; color: white;">Technical Excellence</h3>
-          <p style="margin-bottom: 1rem; opacity: 0.9;">Key Innovations</p>
-          <p style="margin-bottom: 1.5rem; line-height: 1.5;">Performance optimizations, infrastructure improvements, and innovative solutions that transformed system capabilities.</p>
-          <a href="lemnisk_technical.html" style="background: rgba(255,255,255,0.2); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold;">
-            🔧 See Achievements →
-          </a>
-        </div>
-      </div>
-      
-      <div style="width: 45%; padding-left: 2rem;">
-        <!-- Empty space for alternating layout -->
-      </div>
-    </div>
-    
   </div>
 </div>
 
@@ -176,8 +154,5 @@
     <a href="lemnisk_fulltime.html" style="background: #9b59b6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       🚀 Full-Time Journey
     </a>
-    <!-- <a href="lemnisk_technical.html" style="background: #e74c3c; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-      ⚡ Technical Deep Dive
-    </a> -->
   </div>
 </div>
