@@ -78,7 +78,7 @@
       </div>
       
       <div style="width: 45%; padding-left: 2rem;">
-        <div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); padding: 2rem; border-radius: 12px; color: white; max-width: 400px; margin-left: 1rem;">
+        <div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); padding: 2rem; border-radius: 12px; color: white; max-width: 400px; margin-left: 4rem;">
           <h3 style="margin-top: 0; color: white;">Full-Time Evolution</h3>
           <p style="margin-bottom: 1rem; opacity: 0.9;">Aug 2023 - Present</p>
           <p style="margin-bottom: 1.5rem; line-height: 1.5;">Banking clients, security challenges, and scaling systems to handle massive loads while maintaining reliability.</p>
