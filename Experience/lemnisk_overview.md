@@ -139,7 +139,15 @@
   </div>
   <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐳</div>
-    <strong>Kubernetes</strong>
+    <strong>Devtron</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗄️</div>
+    <strong>Aerospike</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐬</div>
+    <strong>MySQL</strong>
   </div>
 </div>
 
