@@ -1,13 +1,8 @@
 ---
 layout: default
-title: Koteswarudu Akula
-description: Software Development Engineer
+title: 👋 Hi, I'm Koteswarudu Akula
+description: Software Development Engineer passionate about building high-performance systems and solving complex technical challenges.
 ---
-
-<div style="text-align: center; margin: 2rem 0; padding: 1.5rem;">
-  <h1 style="margin: 0; font-size: 2.5rem; color: #2c3e50;">👋 Hi, I'm Koteswarudu Akula</h1>
-  <p style="font-size: 1.2rem; color: #7f8c8d; margin: 0.5rem 0;">Software Development Engineer passionate about building high-performance systems and solving complex technical challenges.</p>
-</div>
 
 ## 🚀 Featured Experience
 
