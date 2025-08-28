@@ -152,7 +152,7 @@
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
     <div>
       <h4 style="color: #3498db; margin-bottom: 0.5rem;">🔍 Problem-Solving Mindset</h4>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">From finding SDK bugs as an intern to architecting solutions for banking-grade security requirements.</p>
+      <p style="margin: 0; opacity: 0.9; line-height: 1.5;">From finding SDK bugs as an intern to architecting high-performance systems that handle millions of notifications daily.</p>
     </div>
     <div>
       <h4 style="color: #e74c3c; margin-bottom: 0.5rem;">📈 Continuous Growth</h4>
