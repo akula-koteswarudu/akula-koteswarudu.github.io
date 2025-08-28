@@ -176,8 +176,8 @@
     <a href="lemnisk_fulltime.html" style="background: #9b59b6; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       🚀 Full-Time Journey
     </a>
-    <a href="lemnisk_technical.html" style="background: #e74c3c; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
+    <!-- <a href="lemnisk_technical.html" style="background: #e74c3c; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
       ⚡ Technical Deep Dive
-    </a>
+    </a> -->
   </div>
 </div>

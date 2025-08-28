@@ -50,32 +50,32 @@
 
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        My first major challenge came when Android introduced new restrictions on background services. Our SDK, which had worked flawlessly for years, suddenly started failing on newer Android versions. Push notifications weren't being delivered, and our clients were understandably concerned.
+        My first major project arrived sooner than expected. Android was updating its API requirements, and our legacy background services needed to migrate to WorkManager. I saw it as an opportunity to leave my mark on something real – something that would actually run in production and serve real users.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        This wasn't just about fixing a bug – it was about understanding the fundamental shift in how Android handles background processes. I spent days diving into Android documentation, testing different approaches, and collaborating with senior developers to find a solution that would work across all Android versions while maintaining our SDK's reliability.
+        The migration wasn't just about changing APIs; it required understanding the fundamental differences in how Android handles background processing. I spent days reading documentation, testing different approaches, and ensuring backward compatibility. When the SDK finally shipped with my changes, I felt something I'd never experienced before – the pride of knowing that somewhere in the world, users were receiving notifications because of code I had written.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔧</div>
-        <strong style="color: white;">Problem Solving</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Android API compatibility</p>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        But the journey didn't stop there. The Android changes needed to propagate to our React Native SDK too. Suddenly, I was learning cross-platform development, understanding how native modules bridge to JavaScript, and managing release processes across multiple platforms. Each release taught me something new about the intricate dance between different technologies.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px;">
+        <strong style="color: white;">📱 Platform:</strong> Android SDK
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📱</div>
-        <strong style="color: white;">Testing</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Multiple Android versions</p>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px;">
+        <strong style="color: white;">🎯 Goal:</strong> WorkManager Migration
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🤝</div>
-        <strong style="color: white;">Collaboration</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Senior developer mentorship</p>
-      </div>
+    </div>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🚀 Achievement:</strong> Successfully shipped to production, enabling notifications for millions of users worldwide
     </div>
   </div>
 
@@ -87,17 +87,18 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        During my internship, I was given the freedom to experiment with new approaches to push notification delivery. What started as a simple experiment to improve delivery rates turned into a comprehensive analysis of our entire notification pipeline.
+        Around this time, my manager approached me with an experimental idea – what if we could build a system where the SDK itself could pull notifications that FCM failed to deliver? It was ambitious, requiring changes to both the SDK and backend infrastructure. Since the backend wasn't ready, we built a dummy API that returned the same notifications repeatedly. It seemed simple, but it was laying the groundwork for something much bigger.
       </p>
     </div>
 
-    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
-      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin-bottom: 1rem;">
-        I discovered that our system was processing notifications sequentially, creating bottlenecks during high-traffic periods. By implementing a parallel processing approach and optimizing our database queries, I was able to demonstrate a significant improvement in throughput – from 5,000 to 15,000 notifications per minute in my test environment.
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        Working directly with my manager on this experiment taught me about the importance of proof-of-concepts and iterative development. We weren't just building features; we were exploring possibilities and pushing the boundaries of what mobile notification systems could do.
       </p>
-      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
-        <strong style="color: white;">🚀 Early Impact:</strong> 3x improvement in notification processing speed during internship experiments
-      </div>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">💡 Innovation:</strong> Built the foundation for pull notifications - a system that would later become crucial for notification reliability
     </div>
   </div>
 
@@ -109,39 +110,51 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Three months into my internship, I was given the opportunity to join the on-call rotation – something typically reserved for full-time engineers. My first on-call incident happened at 2 AM on a Saturday. Our notification service was down, affecting thousands of users across multiple client applications.
+        Then came the moment that would define my internship – and arguably my entire career trajectory. I became the <strong>first intern in company history</strong> to join the on-call rotation. My manager believed in me enough to let me experiment with whether interns could learn from the intense, real-world pressure of production support.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The pressure was intense, but this is where all my exploration and experimentation paid off. Because I had spent so much time understanding the system architecture, I was able to quickly identify the root cause – a database connection pool exhaustion that occurred during peak traffic. Within 45 minutes, I had implemented a temporary fix and restored service.
+        Those first few weeks were brutal. I was thrown into the deep end of systems I barely understood – CDP flows, MA backend processes, and complex client integrations that I'd only heard about in passing. Every ticket felt like a mountain to climb. I'd spend hours reading through codebases, tracing execution paths, and trying to understand how data flowed through our systems.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px;">
-        <h4 style="color: white; margin-top: 0;">🎯 The Challenge</h4>
-        <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 1rem;">
-          <li>2 AM production outage</li>
-          <li>Thousands of affected users</li>
-          <li>Database connection issues</li>
-          <li>High-pressure environment</li>
-        </ul>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+        <strong style="color: white;">CDP Flows</strong>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px;">
-        <h4 style="color: white; margin-top: 0;">✅ The Resolution</h4>
-        <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 1rem;">
-          <li>45-minute resolution time</li>
-          <li>Root cause identified quickly</li>
-          <li>Temporary fix implemented</li>
-          <li>Service fully restored</li>
-        </ul>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔧</div>
+        <strong style="color: white;">MA Backend</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔗</div>
+        <strong style="color: white;">Client Integrations</strong>
       </div>
     </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5); margin-top: 1.5rem;">
-      <strong style="color: white;">🏆 Recognition:</strong> This incident earned me recognition from senior leadership and fast-tracked my transition to more complex projects
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        The senior engineers were helpful when they could be, but they had their own fires to fight. So I developed a different approach – I would dive into the code directly, reading entire applications from top to bottom until I understood not just what they did, but why they did it that way. This self-directed learning approach became my superpower.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        Week after week, I was primary on-call with barely any breaks. It was exhausting, but it was also exhilarating. Each resolved incident taught me something new about system behavior, about how to read logs effectively, about the difference between temporary fixes and root cause solutions. I was developing an intuition for troubleshooting that would serve me for years to come.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">💪 Superpower Developed:</strong> Self-directed deep-dive learning - reading entire applications from top to bottom to understand not just what they do, but why
+    </div>
+
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        By the end of my internship, I had accidentally become one of the most knowledgeable people about the company's core backend flows – knowledge that typically took engineers months to acquire.
+      </p>
     </div>
   </div>
 

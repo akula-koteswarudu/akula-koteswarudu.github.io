@@ -65,39 +65,39 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        My first major full-time project was implementing end-to-end encryption for push notifications sent to banking applications. This wasn't just about adding a layer of security – it was about redesigning our entire notification pipeline to handle encrypted payloads while maintaining the performance our clients expected.
+        Working with financial services clients meant that security couldn't be an afterthought. The transactional flow required a sophisticated two-step encryption process that I had to master completely. Every user device would generate unique RSA key pairs through our SDK, sending the public keys to our backend for storage in Aerospike.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The challenge was immense: how do you encrypt sensitive financial data, transmit it securely through multiple systems, and then decrypt it on mobile devices – all while ensuring that the user experience remains seamless? I spent weeks researching encryption algorithms, key management systems, and secure communication protocols.
+        When sending notifications, we would generate a fresh AES key for each message, encrypt the notification payload with this AES key, then encrypt the AES key itself using the device's specific RSA public key. Both pieces would be sent together, allowing only that specific device to decrypt and display the notification. It was an elegant and secure approach.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px;">
-        <h4 style="color: white; margin-top: 0;">🔐 Security Requirements</h4>
-        <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 1rem;">
-          <li>End-to-end encryption</li>
-          <li>Key rotation mechanisms</li>
-          <li>Secure key storage</li>
-          <li>Compliance with banking standards</li>
-        </ul>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        The system also needed to track user consent at a granular level – both promotional and transactional notifications required explicit user permission. Our SDK would capture consent from users in the client app and send it to our backend, where it was stored at the user level in Aerospike for validation during notification processing.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔑</div>
+        <strong style="color: white;">RSA Encryption</strong>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px;">
-        <h4 style="color: white; margin-top: 0;">⚡ Performance Goals</h4>
-        <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 1rem;">
-          <li>Minimal latency impact</li>
-          <li>Scalable architecture</li>
-          <li>Seamless user experience</li>
-          <li>High throughput maintenance</li>
-        </ul>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+        <strong style="color: white;">AES Security</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
+        <strong style="color: white;">User Consent</strong>
       </div>
     </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5); margin-top: 1.5rem;">
-      <strong style="color: white;">🏆 Achievement:</strong> Successfully implemented banking-grade encryption without compromising system performance
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🔐 Security Architecture:</strong> Two-step encryption with device-specific RSA keys and fresh AES keys for each message
     </div>
   </div>
 
@@ -109,36 +109,31 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        As our banking clients' user bases grew, we hit a critical bottleneck. Our Node.js-based push notification service, which had served us well for smaller clients, was struggling to handle the massive volume of notifications required by major banking applications. We were processing about 5,000 notifications per minute, but our clients needed us to handle 50,000 or more.
+        As the banking client's usage grew, we started hitting the fundamental limitations of our Node.js push sender. Despite our best optimization efforts – tuning Kafka configurations, optimizing consumer handlers, and addressing rebalancing issues – we could barely push through 5,000 events per minute. For an I/O intensive application, JavaScript's single-threaded nature was becoming a bottleneck we couldn't engineer around.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        This was my introduction to the harsh realities of scale. Node.js, with its single-threaded event loop, was simply not designed for the CPU-intensive encryption and decryption operations we needed to perform at this volume. The system was becoming a bottleneck, and our clients were starting to notice delays in notification delivery.
+        The Kafka issues were particularly frustrating. Consumer groups would constantly rebalance, disrupting our throughput and causing delivery delays. We tried everything – adjusting timeouts, tuning heartbeat intervals, optimizing our consumer code – but the problems persisted. Eventually, we discovered that the real issue was our Azure HDInsight Kafka setup. Migrating to a standalone Kafka cluster resolved the rebalancing issues, but the fundamental performance limitations remained.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem; color: #e74c3c;">📉</div>
-        <strong style="color: white;">5K/min</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Current capacity</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+        <strong style="color: white; display: block;">Throughput Limit</strong>
+        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">5,000 events/min</span>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem; color: #f39c12;">🎯</div>
-        <strong style="color: white;">50K/min</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Required capacity</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem; color: #e67e22;">⚠️</div>
-        <strong style="color: white;">10x Gap</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Performance needed</p>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚠️</div>
+        <strong style="color: white; display: block;">Bottleneck</strong>
+        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Single-threaded JS</span>
       </div>
     </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5); margin-top: 1.5rem;">
-      <strong style="color: white;">💡 Realization:</strong> Node.js single-threaded architecture couldn't handle CPU-intensive encryption at banking scale
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🔍 Root Cause:</strong> JavaScript's single-threaded nature became an insurmountable bottleneck for high-throughput processing
     </div>
   </div>
 
@@ -150,41 +145,43 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Faced with the Node.js performance limitations, I proposed a radical solution: rebuild the entire push notification service from scratch using Java Spring Boot. This wasn't just a technology switch – it was a complete architectural overhaul that would leverage Java's multi-threading capabilities and superior performance for CPU-intensive operations.
+        Faced with these limitations, our team made a bold decision – we would rewrite the entire push sender from scratch in Java Spring Boot. This wasn't just about changing languages; it was about reimagining how a high-performance notification system should work.
       </p>
     </div>
 
     <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The project was massive in scope. I had to design a new microservices architecture, implement efficient connection pooling for database operations, create a robust queue management system using Kafka, and ensure seamless integration with our existing infrastructure. All while maintaining backward compatibility and zero downtime during the transition.
+        I took on this challenge with enthusiasm, using AI tools like Windsurf not as a crutch, but as a collaboration partner. I would design the architecture, write the code, and then use AI to review and suggest improvements. Every suggestion was carefully evaluated, modified to match my coding style, and integrated only if it truly improved the solution.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☕</div>
-        <strong style="color: white;">Java Spring Boot</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Multi-threading power</p>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        The architecture I built was something I'm genuinely proud of. Using SOLID principles and carefully chosen design patterns, I created a system of abstractions and interfaces that could handle not just the banking client's specific requirements, but also the varied payload types from our main Marketing Automation flow used by all other clients. The code was designed for reusability, maintainability, and future extensibility.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
+        <strong style="color: white; display: block;">Before</strong>
+        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">5,000 events/min</span>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏗️</div>
-        <strong style="color: white;">Microservices</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Scalable architecture</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🌊</div>
-        <strong style="color: white;">Kafka Integration</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Queue management</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔄</div>
-        <strong style="color: white;">Zero Downtime</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Seamless transition</p>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚀</div>
+        <strong style="color: white; display: block;">After</strong>
+        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">150,000 events/min</span>
       </div>
     </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5); margin-top: 1.5rem;">
-      <strong style="color: white;">🎯 Result:</strong> Successfully architected and built a complete replacement system from the ground up
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🎯 Revolutionary Result:</strong> 30x performance improvement on the same hardware - replaced years of technical debt with a unified solution
+    </div>
+
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        When we finally deployed the Java push sender, the results were staggering. On the exact same hardware that struggled to handle 5,000 events per minute in Node.js, our Java application was processing 150,000 events per minute – a 30x performance improvement. We rolled it out across all regions and all clients, replacing years of accumulated technical debt with a single, unified solution.
+      </p>
     </div>
   </div>
 
@@ -196,40 +193,210 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        The new Java-based system was a game-changer, but the real magic happened in the optimization phase. Through careful profiling, database query optimization, and intelligent caching strategies, I was able to push the system's performance far beyond our initial targets. What started as a goal to reach 50,000 notifications per minute became a reality of processing over 150,000 notifications per minute.
+        One of the most satisfying moments of my career came from what seemed like a trivial change. While performance testing our Android notification flow, I noticed we were hitting a throughput ceiling around 33,000 events per minute. Something was creating a bottleneck, but it wasn't obvious what.
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #e74c3c;">5K</div>
-        <strong style="color: white;">Original</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Node.js system</p>
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        Diving into the code, I found the culprit in our batching logic. Every time we added a payload to a batch, we were converting the entire JSON array to a string and calculating its byte length. For a batch of 50 items, this meant the first addition took microseconds, but by the 49th addition, we were spending nearly 3 milliseconds just calculating sizes.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        The fix was embarrassingly simple – instead of recalculating the entire batch size each time, just add the new payload's size to a running total. One line of code changed, and our throughput improved dramatically. It was a perfect reminder that performance optimization is often about understanding exactly what your code is doing, not just making it more complex.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔍</div>
+        <strong style="color: white; display: block;">Problem</strong>
+        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Inefficient batching</span>
       </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #f39c12;">50K</div>
-        <strong style="color: white;">Target</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Initial goal</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-        <div style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #2ecc71;">150K+</div>
-        <strong style="color: white;">Achieved</strong>
-        <p style="color: rgba(255,255,255,0.8); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Final result</p>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+        <strong style="color: white; display: block;">Solution</strong>
+        <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">One line fix</span>
       </div>
     </div>
 
-    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
-      <h4 style="color: white; margin-top: 0;">🔧 Optimization Techniques</h4>
-      <ul style="color: rgba(255,255,255,0.9); margin: 0; padding-left: 1rem;">
-        <li>Database connection pooling and query optimization</li>
-        <li>Intelligent caching with Redis for frequently accessed data</li>
-        <li>Asynchronous processing with optimized thread pools</li>
-        <li>Memory management and garbage collection tuning</li>
-      </ul>
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">💡 Key Insight:</strong> Performance optimization is about understanding exactly what your code is doing, not making it more complex
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #16a085; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: white; font-weight: bold;">11</span>
+    </div>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">💡 Innovation in Notification Reliability</h2>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        The pull notifications experiment from my internship days evolved into a comprehensive solution for notification reliability. Modern mobile operating systems are increasingly aggressive about limiting background processing, meaning traditional push notifications sometimes fail to reach users even when their devices are online.
+      </p>
     </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5); margin-top: 1.5rem;">
-      <strong style="color: white;">🏆 Impact:</strong> Achieved 30x performance improvement over the original system, exceeding all expectations
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        I designed and implemented a sophisticated system to handle this challenge. Background workers on Android and BGAppRefreshTasks on iOS would periodically refresh device tokens and check for missed notifications. When the app couldn't run these background tasks, we would send silent push notifications to trigger the refresh process.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        The backend component I built could scan our Aerospike database for tokens that hadn't been refreshed recently, identify users who might have missed notifications, and intelligently send silent pushes to wake up their apps. The system was capable of processing 230,000 events per minute while making complex decisions about user behavior patterns and notification delivery success rates.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+        <strong style="color: white;">Android Workers</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍎</div>
+        <strong style="color: white;">iOS BGAppRefresh</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔔</div>
+        <strong style="color: white;">Silent Push</strong>
+      </div>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">⚡ Performance:</strong> 230,000 events per minute with intelligent user behavior pattern analysis
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #c0392b; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: white; font-weight: bold;">12</span>
+    </div>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🔧 Problem-Solving & Issue Resolution</h2>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        Not every challenge was about building new systems. A significant part of my role involved diagnosing and resolving critical issues that could impact client functionality. Here are a couple of examples:
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+          <strong style="color: white; display: block;">Android Compatibility Issue</strong>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0;">
+          When a client upgraded their Google Ads Identifier library to version 18.2.0, Android 7 devices started crashing. The investigation revealed that the newer library was using Java 8 APIs like `java.time.Duration` that didn't exist on older Android versions. I provided solutions including core library desugaring and documented the process for future reference.
+        </p>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌐</div>
+          <strong style="color: white; display: block;">Arabic Text Encoding Issue</strong>
+        </div>
+        <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0;">
+          We encountered a problem where Arabic text was being displayed as gibberish to users. The issue stemmed from a change in the format that clients were sending Arabic text, and our decoding logic wasn't handling the new format properly. I fixed the decoding implementation to work robustly across different text formats, ensuring proper display of Arabic content.
+        </p>
+      </div>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.5);">
+      <strong style="color: white;">🎯 Impact:</strong> These are just two issues I remember from the many bugs and technical challenges I've diagnosed and resolved throughout my time at the company.
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #27ae60; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: white; font-weight: bold;">13</span>
+    </div>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🏗️ The Infrastructure Behind the Code</h2>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        Throughout this journey, I was also learning the operational side of software development. I dockerized applications, managed Kubernetes deployments through Devtron, and maintained the complex web of services that kept everything running. Setting up monitoring with Prometheus and Grafana, optimizing Aerospike queries with User Defined Functions, and managing certificate rotations for FCM and APNS might not be glamorous work, but it's the foundation that allows the exciting features to actually function reliably.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐳</div>
+        <strong style="color: white;">Docker</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">☸️</div>
+        <strong style="color: white;">Kubernetes</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+        <strong style="color: white;">Prometheus</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
+        <strong style="color: white;">Grafana</strong>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #d35400 0%, #e67e22 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #d35400; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: white; font-weight: bold;">14</span>
+    </div>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🛡️ Security Hardening and Trust</h2>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        Working with financial services clients meant that security couldn't be an afterthought. I implemented certificate pinning for iOS SDK API calls, designed secure token management systems, and ensured that every piece of sensitive data was handled with appropriate encryption and access controls. These weren't just technical requirements – they were about building systems that clients could trust with their most sensitive communications.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📌</div>
+        <strong style="color: white;">Certificate Pinning</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔐</div>
+        <strong style="color: white;">Token Management</strong>
+      </div>
+      <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 8px; text-align: center;">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+        <strong style="color: white;">Access Controls</strong>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; color: white; position: relative;">
+    <div style="position: absolute; left: -3rem; top: 2rem; width: 2rem; height: 2rem; background: #8e44ad; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+      <span style="color: white; font-weight: bold;">15</span>
+    </div>
+    <h2 style="color: white; margin-top: 0; font-size: 1.8rem;">🌟 Looking Forward: From Journey to Destination</h2>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        As I reflect on this journey from intern to full-time engineer, what strikes me most is how each challenge built upon the previous ones. The debugging skills I learned during on-call rotations helped me optimize performance bottlenecks. The cross-platform SDK work prepared me for thinking about system architecture. The infrastructure improvements taught me to think beyond just writing code to understanding the complete operational picture.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        I've gone from someone who needed tutorials to understand Spring Boot to someone who can design and implement systems that handle hundreds of thousands of events per minute. I've learned to balance the demands of high-performance systems with the reliability requirements of financial services. I've experienced the satisfaction of both finding critical bugs and building entirely new capabilities.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
+        But perhaps most importantly, I've learned that great engineering isn't just about writing clever code – it's about understanding problems deeply, designing sustainable solutions, and building systems that other people can depend on. Every notification that reaches a user's device, every system that stays up during peak traffic, every bug that gets fixed before it impacts production – these are the real measures of success.
+      </p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 8px; text-align: center;">
+      <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0; font-size: 1.1rem; font-weight: bold;">
+        The journey continues, and I'm ready for whatever challenges come next.
+      </p>
     </div>
   </div>
 
