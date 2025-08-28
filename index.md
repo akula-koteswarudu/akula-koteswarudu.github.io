@@ -4,6 +4,11 @@ title: Koteswarudu Akula
 description: Software Development Engineer
 ---
 
+<div style="text-align: center; margin: 2rem 0; padding: 1.5rem;">
+  <h1 style="margin: 0; font-size: 2.5rem; color: #2c3e50;">👋 Hi, I'm Koteswarudu Akula</h1>
+  <p style="font-size: 1.2rem; color: #7f8c8d; margin: 0.5rem 0;">Software Development Engineer passionate about building high-performance systems and solving complex technical challenges.</p>
+</div>
+
 ## 🚀 Featured Experience
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; margin: 2rem 0; color: white;">
@@ -20,6 +25,7 @@ description: Software Development Engineer
     <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Node.js</span>
     <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Kafka</span>
     <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">AWS</span>
+    <span style="background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Aerospike</span>
   </div>
 </div>
 
@@ -88,6 +94,7 @@ description: Software Development Engineer
 - 🔧 **System Architecture**: Built scalable push notification service from scratch using Java Spring Boot
 - 📱 **Mobile SDKs**: Developed and maintained Android/iOS SDKs for millions of users
 - 🛠️ **Infrastructure**: Deployed applications on Kubernetes with monitoring and observability
+- 🐛 **Technical Leadership**: Led critical system migrations and resolved complex production issues at scale
 
 ## 📞 Contact
 
