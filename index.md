@@ -90,6 +90,7 @@ description: Software Development Engineer passionate about building high-perfor
 - 📱 **Mobile SDKs**: Developed and maintained Android/iOS SDKs for millions of users
 - 🛠️ **Infrastructure**: Deployed applications on Kubernetes with monitoring and observability
 - 🐛 **Technical Leadership**: Led critical system migrations and resolved complex production issues at scale
+- 🏆 **Recognition**: Received Lemnisk Spot Award Q1 2024 for outstanding contribution and dedication
 
 ## 📞 Contact
 
