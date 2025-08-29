@@ -65,7 +65,7 @@
     
     <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
       <p style="color: rgba(255,255,255,0.95); line-height: 1.6; margin: 0;">
-        Working with financial services clients meant that security couldn't be an afterthought. The transactional flow required a sophisticated two-step encryption process that I had to master completely. Every user device would generate unique RSA key pairs through our SDK, sending the public keys to our backend for storage in Aerospike. When sending notifications, we would generate a fresh AES key for each message, encrypt the notification payload with this AES key, then encrypt the AES key itself using the device's specific RSA public key.
+        Working with financial services clients meant that security couldn't be an afterthought. The transactional flow required a sophisticated multi-layered encryption approach that I had to master completely. Each user device maintained its own cryptographic identity through our SDK, with secure key management handled at the backend level. For every notification, we implemented a hybrid encryption strategy that combined the strengths of both symmetric and asymmetric cryptography, ensuring that only the intended device could decrypt and display the message.
       </p>
     </div>
 
