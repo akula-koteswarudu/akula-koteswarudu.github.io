@@ -217,22 +217,6 @@
 
 </div>
 
-## 🏆 Recognition & Impact
-
-<div style="background: linear-gradient(135deg, #f39c12, #e67e22); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0; position: relative;">
-  <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
-    <div style="flex: 1;">
-      <h3 style="color: white; margin-top: 0;">🏆 Lemnisk Spot Award Q1 2024</h3>
-      <p style="margin: 0; opacity: 0.9; line-height: 1.5; font-size: 1.1rem;">
-        Received recognition for <strong>outstanding contribution and dedication</strong> during my full-time journey. This award reflects the impact of performance optimizations, system architecture improvements, and technical leadership contributions.
-      </p>
-    </div>
-    <div style="flex-shrink: 0;">
-      <img src="assets/spot-award.jpg" alt="Lemnisk Spot Award Certificate" style="max-width: 200px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-    </div>
-  </div>
-</div>
-
 ## 🎯 Full-Time Journey Impact
 
 <div style="background: linear-gradient(135deg, #34495e, #2c3e50); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0;">
