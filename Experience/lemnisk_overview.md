@@ -114,43 +114,6 @@
   </div>
 </div>
 
-## 🛠️ Technology Stack
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0;">
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☕</div>
-    <strong>Java Spring Boot</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🟢</div>
-    <strong>Node.js</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📱</div>
-    <strong>Android/iOS SDK</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🌊</div>
-    <strong>Kafka</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☁️</div>
-    <strong>AWS</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐳</div>
-    <strong>Devtron</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗄️</div>
-    <strong>Aerospike</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐬</div>
-    <strong>MySQL</strong>
-  </div>
-</div>
-
 ## 🏆 Recognition & Impact
 
 <div style="background: linear-gradient(135deg, #f39c12, #e67e22); padding: 2rem; border-radius: 12px; color: white; margin: 2rem 0; position: relative;">
@@ -164,6 +127,51 @@
     <div style="flex-shrink: 0;">
       <img src="assets/spot-award.jpg" alt="Lemnisk Spot Award Certificate" style="max-width: 200px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
     </div>
+  </div>
+</div>
+
+## 🛠️ Technology Stack & Tools
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin: 2rem 0;">
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☕</div>
+    <strong>Java</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🍃</div>
+    <strong>Spring Boot</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐘</div>
+    <strong>PostgreSQL</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📮</div>
+    <strong>Kafka</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔴</div>
+    <strong>Redis</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐳</div>
+    <strong>Docker</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☸️</div>
+    <strong>Kubernetes</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☁️</div>
+    <strong>AWS</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗄️</div>
+    <strong>Aerospike</strong>
+  </div>
+  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐬</div>
+    <strong>MySQL</strong>
   </div>
 </div>
 
