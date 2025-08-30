@@ -39,7 +39,7 @@
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\normalsize{
     {#1 \vspace{-2pt}}
   }
 }
@@ -47,7 +47,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{\normalsize #1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -74,13 +74,13 @@
 
 %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
-\small{
+\normalsize{
 Backend Software Engineer with 2+ years of experience specializing in \textbf{Java Spring Boot} microservices and high-performance system architecture. Proven track record of delivering \textbf{30x performance improvements} and building scalable notification systems. Strong background in \textbf{CI/CD Devtron deployment pipelines}, production troubleshooting, and cross-platform SDK development. Recognized with \textbf{Lemnisk Spot Award Q1 2024} for outstanding technical contributions and system architecture leadership.
 }
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\small{
+\normalsize{
 \textbf{Backend:} Java, Spring Boot, Node.js, Python \\
 \textbf{Architecture:} Microservices, REST APIs, Event-driven systems \\
 \textbf{Data \& Messaging:} MySQL, Aerospike (NoSQL), Apache Kafka \\
@@ -100,7 +100,7 @@ Backend Software Engineer with 2+ years of experience specializing in \textbf{Ja
         \resumeItem{Implemented backend for \textbf{hybrid encryption system (RSA/AES)} with device-specific keys and \textbf{certificate pinning for SDK's}}
         \resumeItem{Built silent push notification system processing \textbf{230K events/minute} for device token refresh and notification reliability}
         \resumeItem{Tested and Deployed many applications on \textbf{Kubernetes using Devtron} with monitoring via Prometheus and Grafana}
-        \resumeItem{Resolved critical production issues including SDK compatibility Issues, Encoding problems, Kafka rebalancing issues and more}
+        \resumeItem{Fixed critical production issues including SDK compatibility Issues, Encoding issues, Kafka rebalancing issues and more}
         \resumeItem{Designed intelligent notification reliability system with background workers for Android and BGAppRefreshTasks for iOS}
       \resumeItemListEnd
 
@@ -111,10 +111,10 @@ Backend Software Engineer with 2+ years of experience specializing in \textbf{Ja
       {Lemnisk, Bangalore}{Onsite}
       \resumeItemListStart
         \resumeItem{\textbf{First intern in company history} to join on-call rotation, developing deep debugging skills and expertise in production troubleshooting, CDP/MA flows, and complex client integrations}
-        \resumeItem{Migrated Android SDK from legacy background services to \textbf{WorkManager}, enhancing reliability and background task scheduling}
+        \resumeItem{Migrated Android SDK from legacy background services to \textbf{WorkManager}, enhancing reliability and background tasks}
         \resumeItem{Built experimental pull notification system that evolved into comprehensive notification reliability solution}
         \resumeItem{Optimized AWS infrastructure by consolidating load balancers with intelligent routing, reducing costs}
-        \resumeItem{Improved production VM monitoring by deploying \textbf{Monit and Node Exporters} for enhanced system visibility and alerting}
+        \resumeItem{Improved production VM monitoring by deploying \textbf{Monit and Node Exporters} for enhanced system visibility}
         \resumeItem{Developed cross-platform SDK features bridging Android native code to React Native}
       \resumeItemListEnd
 
@@ -145,7 +145,7 @@ Backend Software Engineer with 2+ years of experience specializing in \textbf{Ja
 %-----------ACHIEVEMENTS-----------
 \section{Key Achievements}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+    \normalsize{\item{
      \textbf{Lemnisk Spot Award Q1 2024:} Outstanding technical contribution and leadership in system architecture \\
      \textbf{Performance Excellence:} 30x improvement (5K → 150K events/min) through Java Spring Boot architectural redesign \\
      \textbf{System Architecture:} Built scalable push notification service from scratch serving millions of users \\
