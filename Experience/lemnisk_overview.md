@@ -142,24 +142,12 @@
     <strong>Spring Boot</strong>
   </div>
   <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐘</div>
-    <strong>PostgreSQL</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📮</div>
     <strong>Kafka</strong>
   </div>
   <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔴</div>
-    <strong>Redis</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🐳</div>
-    <strong>Docker</strong>
-  </div>
-  <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☸️</div>
-    <strong>Kubernetes</strong>
+    <strong>Devtron</strong>
   </div>
   <div style="background: #ecf0f1; padding: 1rem; border-radius: 8px; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">☁️</div>
